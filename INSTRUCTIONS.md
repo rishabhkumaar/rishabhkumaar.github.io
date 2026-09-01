@@ -51,7 +51,7 @@ The following assets are optional and can be supplied at a later date if desired
 - **Phone:** `+91-9306208755`
 - **GitHub:** `https://github.com/rishabhkumaar`
 - **LinkedIn:** `https://www.linkedin.com/in/rishabhkumaar`
-- **LeetCode:** `https://leetcode.com/u/rishabhkumaar`
+- **LeetCode:** `https://leetcode.com/u/rishabhkumaaar`
 - **HackerRank:** `https://www.hackerrank.com/profile/rishabhkumaar`
 - **HackerEarth:** `https://www.hackerearth.com/@rishabhkumaar`
 - **GeeksforGeeks:** `https://www.geeksforgeeks.org/profile/rishabhkumaar`

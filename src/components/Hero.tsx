@@ -18,7 +18,7 @@ export default function Hero() {
       </div>
 
       <div className="w-full max-w-[1280px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-        
+
         {/* Editorial Header Strip */}
         <Reveal>
           <div className="flex flex-wrap items-center justify-between gap-4 pb-6 mb-8 border-b border-border">
@@ -33,7 +33,7 @@ export default function Hero() {
 
         {/* Asymmetric Magazine Cover Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
-          
+
           {/* Left Column — 5 cols */}
           <div className="lg:col-span-5 space-y-6">
             <Reveal>
@@ -96,7 +96,7 @@ export default function Hero() {
           <div className="lg:col-span-7 relative">
             <Reveal>
               <div className="relative pt-4 pb-8 sm:py-6">
-                
+
                 {/* 1. Primary GitHub Profile Browser Mockup */}
                 <div className="relative z-10 transform lg:rotate-[-1deg] hover:rotate-0 transition-transform duration-500 max-w-xl ml-auto">
                   <BrowserMockup
@@ -112,7 +112,7 @@ export default function Hero() {
                   <BrowserMockup
                     src="/images/profiles/leetcode.webp"
                     alt="LeetCode Profile — Rishabh Kumar"
-                    url="https://leetcode.com/u/rishabhkumaar"
+                    url="https://leetcode.com/u/rishabhkumaaar"
                     className="shadow-2xl border-2 border-white/80"
                   />
                 </div>

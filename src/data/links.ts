@@ -12,7 +12,7 @@ export const PHONE = "+91-9306208755";
 // All extracted from CSE111 Portfolio document (Table of Contents, pages 3–12)
 export const GITHUB_URL = "https://github.com/rishabhkumaar";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/rishabhkumaar";
-export const LEETCODE_URL = "https://leetcode.com/u/rishabhkumaar";
+export const LEETCODE_URL = "https://leetcode.com/u/rishabhkumaaar";
 export const HACKERRANK_URL = "https://www.hackerrank.com/profile/rishabhkumaar";
 export const HACKEREARTH_URL = "https://www.hackerearth.com/@rishabhkumaar";
 export const GFG_URL = "https://www.geeksforgeeks.org/profile/rishabhkumaar";
