@@ -58,4 +58,4 @@ The following assets are optional and can be supplied at a later date if desired
 - **Stack Overflow:** `https://stackoverflow.com/users/31430764/rishabh-kumar`
 - **CodeChef:** `https://www.codechef.com/users/rishabhkumaar`
 - **Figma:** `https://www.figma.com/@rishabhkumaar`
-- **Resume:** `https://drive.google.com/file/d/1Hu7CJ-klX3fKCpnQm70NqrJc9NDEIIqz/view?usp=sharing`
+- **Resume:** `https://drive.google.com/file/d/1ztWNfZqbSDsrR8--7ouecI9vDuu930aR/view?usp=sharing`

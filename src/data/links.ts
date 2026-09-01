@@ -25,9 +25,10 @@ export const FIGMA_LOGO_URL =
 // ── Resume ──────────────────────────────────
 // CV link from CSE111 Portfolio (page 3)
 export const RESUME_URL =
-  "https://drive.google.com/file/d/1Hu7CJ-klX3fKCpnQm70NqrJc9NDEIIqz/view?usp=sharing";
+  "https://drive.google.com/file/d/1ztWNfZqbSDsrR8--7ouecI9vDuu930aR/view?usp=drive_link";
+
 export const RESUME_DOWNLOAD_URL =
-  "https://drive.google.com/uc?export=download&id=1Hu7CJ-klX3fKCpnQm70NqrJc9NDEIIqz";
+  "https://drive.google.com/uc?export=download&id=1ztWNfZqbSDsrR8--7ouecI9vDuu930aR";
 
 // ── Project GitHub URLs ─────────────────────
 // The CV lists "GitHub" links for each project but does not provide the full URLs.
