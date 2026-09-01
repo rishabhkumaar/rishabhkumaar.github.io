@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,26 +12,74 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+};
+
+const siteDescription =
+  "Rishabh Kumar is a Computer Science undergraduate and Full-Stack & Software Developer building systems, interfaces, and useful digital experiences.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://rishabhkumaar.vercel.app"),
   title: "Rishabh Kumar — Full-Stack & Software Developer",
-  description:
-    "Portfolio of Rishabh Kumar — Computer Science undergraduate and Full-Stack Developer. Building systems, interfaces, and useful digital experiences.",
+  description: siteDescription,
   keywords: [
     "Rishabh Kumar",
     "Full-Stack Developer",
-    "Software Engineer",
-    "Portfolio",
+    "Software Developer",
+    "Computer Science",
     "Next.js",
     "React",
     "TypeScript",
     "Python",
+    "PostgreSQL",
+    "Web Development",
+    "Software Engineering",
+    "Rishource",
+    "Portfolio",
   ],
-  authors: [{ name: "Rishabh Kumar" }],
+  authors: [{ name: "Rishabh Kumar", url: "https://rishabhkumaar.vercel.app" }],
+  creator: "Rishabh Kumar",
+  publisher: "Rishabh Kumar",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+  alternates: {
+    canonical: "https://rishabhkumaar.vercel.app/",
+  },
   openGraph: {
-    title: "Rishabh Kumar — Full-Stack & Software Developer",
-    description:
-      "Building systems, interfaces, and useful digital experiences.",
     type: "website",
+    locale: "en_US",
+    url: "https://rishabhkumaar.vercel.app/",
+    title: "Rishabh Kumar — Full-Stack & Software Developer",
+    description: siteDescription,
+    siteName: "Rishabh Kumar",
+    images: [
+      {
+        url: "https://rishabhkumaar.vercel.app/images/projects/portfolio-os/hero.webp",
+        width: 1200,
+        height: 630,
+        alt: "Rishabh Kumar — Portfolio 2.0",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rishabh Kumar — Full-Stack & Software Developer",
+    description: siteDescription,
+    images: [
+      "https://rishabhkumaar.vercel.app/images/projects/portfolio-os/hero.webp",
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 
@@ -45,3 +93,4 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     </html>
   );
 }
+
