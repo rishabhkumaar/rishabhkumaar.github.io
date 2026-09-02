@@ -95,10 +95,69 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
             ))}
           </div>
 
+          {/* Explicit P → T → R → L Case Study Breakdown */}
+          <div className="mb-8 p-5 bg-bg-secondary/60 rounded-xl border border-border space-y-4">
+            <h3 className="font-mono text-xs uppercase tracking-widest text-accent font-bold pb-2 border-b border-border">
+              PROJECT CASE STUDY (P → T → R → L)
+            </h3>
+
+            {/* P — Problem */}
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="font-mono text-xs font-bold text-white bg-red-600 px-2 py-0.5 rounded">
+                  P — PROBLEM
+                </span>
+              </div>
+              <p className="text-sm text-text-secondary leading-relaxed pl-1">
+                {project.problem}
+              </p>
+            </div>
+
+            {/* T — Technology */}
+            <div>
+              <div className="flex items-center gap-2 mb-1.5">
+                <span className="font-mono text-xs font-bold text-white bg-blue-600 px-2 py-0.5 rounded">
+                  T — TECHNOLOGY
+                </span>
+              </div>
+              <div className="flex flex-wrap gap-1.5 pl-1">
+                {project.technologies.map((tech) => (
+                  <span key={tech} className="tech-pill font-mono text-xs">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* R — Result */}
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="font-mono text-xs font-bold text-white bg-green-600 px-2 py-0.5 rounded">
+                  R — RESULT / BUILT
+                </span>
+              </div>
+              <p className="text-sm text-text-secondary leading-relaxed pl-1">
+                {project.result}
+              </p>
+            </div>
+
+            {/* L — Learning */}
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="font-mono text-xs font-bold text-white bg-purple-600 px-2 py-0.5 rounded">
+                  L — KEY LEARNING
+                </span>
+              </div>
+              <p className="text-sm text-text-secondary leading-relaxed pl-1">
+                {project.learning}
+              </p>
+            </div>
+          </div>
+
           {/* Key Engineering Work */}
           <div className="mb-8">
             <h3 className="font-mono text-xs uppercase tracking-widest text-text-tertiary mb-3 font-semibold">
-              Key Engineering Work & Features
+              Key Engineering Work &amp; Features
             </h3>
             <ul className="space-y-3">
               {project.highlights.map((highlight, i) => (
@@ -114,7 +173,7 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
           {project.screenshots.length > 0 && (
             <div className="mb-8">
               <h3 className="font-mono text-xs uppercase tracking-widest text-text-tertiary mb-3 font-semibold">
-                Screenshots & Interfaces
+                Screenshots &amp; Interfaces
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {project.screenshots.map((ss, i) => (

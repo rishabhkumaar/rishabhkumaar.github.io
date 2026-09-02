@@ -47,7 +47,7 @@ export default function Hero() {
             <Reveal>
               <div className="space-y-1 font-mono">
                 <p className="text-sm sm:text-base font-bold text-text-primary uppercase tracking-wider">
-                  COMPUTER SCIENCE UNDERGRADUATE
+                  2ND-YEAR B.TECH CSE STUDENT // LPU
                 </p>
                 <p className="text-xs sm:text-sm font-semibold text-accent uppercase tracking-widest">
                   FULL-STACK &amp; SOFTWARE DEVELOPER
@@ -62,7 +62,7 @@ export default function Hero() {
             </Reveal>
 
             <Reveal>
-              <div className="flex flex-wrap items-center gap-4 pt-2">
+              <div className="flex flex-wrap items-center gap-3 pt-2">
                 <a href="#projects" className="btn-editorial btn-editorial-primary">
                   <span>VIEW PROJECTS</span>
                   <span className="arrow-icon">→</span>
@@ -74,7 +74,17 @@ export default function Hero() {
                   className="btn-editorial"
                 >
                   <span>VIEW RESUME</span>
-                  <span className="arrow-icon">→</span>
+                  <span className="arrow-icon">↗</span>
+                </a>
+                <a
+                  href={identity.resumeDownloadUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-editorial"
+                  title="Download Resume PDF"
+                >
+                  <span>DOWNLOAD RESUME</span>
+                  <span className="arrow-icon">↓</span>
                 </a>
               </div>
             </Reveal>

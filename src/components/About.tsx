@@ -35,15 +35,14 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mt-8">
           <div className="lg:col-span-7">
             <Reveal>
-              <p className="text-base sm:text-xl text-text-secondary leading-relaxed font-normal mb-6">
-                I&apos;m a Computer Science undergraduate at Lovely Professional University,
-                building full-stack applications with a focus on clean architecture,
-                scalable APIs, and polished user interfaces.
+              <p className="text-base sm:text-lg text-text-secondary leading-relaxed font-normal mb-4">
+                I&apos;m <strong className="text-text-primary">Rishabh Kumar</strong>, a 2nd-year B.Tech Computer Science &amp; Engineering student at <strong className="text-text-primary">Lovely Professional University</strong> (CGPA: 9.89 / 10). My core areas of interest span <strong className="text-text-primary">Full-Stack Web Development</strong>, <strong className="text-text-primary">Systems Architecture</strong>, RESTful APIs, and Database Engineering.
               </p>
-              <p className="text-sm sm:text-base text-text-secondary leading-relaxed font-normal">
-                From modular Discord platforms with real-time management dashboards to
-                authenticated study platforms with persistent annotations — I design systems that
-                are as thoughtful under the surface as they are on screen.
+              <p className="text-sm sm:text-base text-text-secondary leading-relaxed font-normal mb-4">
+                I focus on building production-ready applications — from modular Discord platforms (Rishource) and document annotation engines (Courses Glance) to interactive desktop web environments (Portfolio 2.0). My key strengths lie in writing modular maintainable code, implementing efficient caching and rate limiting, and building responsive user interfaces.
+              </p>
+              <p className="text-xs sm:text-sm text-accent font-mono font-semibold uppercase tracking-wider">
+                CAREER ASPIRATION: Seeking Full-Stack &amp; Software Engineering internship roles to build high-impact digital systems.
               </p>
             </Reveal>
           </div>

@@ -16,8 +16,12 @@ import { ASSETS } from "./assets";
 export const identity = {
   name: "Rishabh Kumar",
   role: "Computer Science Undergraduate | Full-Stack & Software Developer",
+  degree: "B.Tech, Computer Science & Engineering",
+  year: "2nd Year",
+  university: "Lovely Professional University",
+  cgpa: "9.89 / 10",
   tagline: "I build systems and interfaces that turn complex ideas into usable software.",
-  metaStrip: ["CSE UNDERGRADUATE", "FULL-STACK", "SYSTEMS", "APIs"],
+  metaStrip: ["CSE UNDERGRADUATE", "2ND YEAR", "FULL-STACK", "SYSTEMS"],
   email: links.EMAIL,
   phone: links.PHONE,
   github: links.GITHUB_URL,
@@ -41,23 +45,23 @@ export const education: EducationEntry[] = [
   {
     institution: "Lovely Professional University",
     location: "Phagwara, Punjab",
-    degree: "B.Tech, Computer Science & Engineering",
-    period: "2025 – Present",
+    degree: "B.Tech, Computer Science & Engineering (2nd Year)",
+    period: "2025 – Present (Expected 2029)",
     grade: "9.89 / 10",
     gradeLabel: "CGPA",
   },
   {
     institution: "PM Shree Kendriya Vidyalaya No. 2",
-    location: "Ambala Cantt",
-    degree: "Higher Secondary Education",
+    location: "Ambala Cantt, Haryana",
+    degree: "Higher Secondary Education (Class XII - Senior Secondary)",
     period: "2023 – 2024",
     grade: "90.6%",
     gradeLabel: "Percentage",
   },
   {
     institution: "PM Shree Kendriya Vidyalaya No. 2",
-    location: "Ambala Cantt",
-    degree: "Secondary Education",
+    location: "Ambala Cantt, Haryana",
+    degree: "Secondary Education (Class X)",
     period: "2021 – 2022",
     grade: "87.6%",
     gradeLabel: "Percentage",
@@ -73,42 +77,31 @@ export interface SkillCategory {
 
 export const skills: SkillCategory[] = [
   {
-    category: "LANGUAGES",
+    category: "PROGRAMMING LANGUAGES",
     items: ["Python", "C", "C++", "JavaScript", "TypeScript", "HTML", "CSS"],
   },
   {
-    category: "FRONTEND",
-    items: ["React", "Next.js", "Tailwind CSS", "Redux Toolkit", "Chart.js", "PDF.js"],
+    category: "WEB DEVELOPMENT",
+    items: ["React", "Next.js", "Tailwind CSS", "Redux Toolkit", "PDF.js", "Chart.js"],
   },
   {
-    category: "BACKEND / DATABASE",
+    category: "DATABASES & ORM",
     items: ["PostgreSQL", "MySQL", "MongoDB", "Firebase Firestore", "Prisma"],
   },
   {
-    category: "APIs / SERVICES",
-    items: [
-      "Discord API",
-      "OpenAI API",
-      "OpenWeatherMap API",
-      "Firebase Authentication",
-      "Discord OAuth",
-      "REST APIs",
-    ],
+    category: "TOOLS & PLATFORMS",
+    items: ["Git", "GitHub", "VS Code", "Vercel", "Netlify", "Figma"],
   },
   {
-    category: "ENGINEERING",
+    category: "CORE CS & CONCEPTS",
     items: [
-      "OAuth",
-      "API caching",
-      "Rate limiting",
-      "Async programming",
-      "Connection pooling",
-      "Modular architecture",
+      "Data Structures & Algorithms",
+      "Object-Oriented Programming (OOP)",
+      "RESTful APIs",
+      "OAuth2 Authentication",
+      "API Caching & Rate Limiting",
+      "Problem Solving",
     ],
-  },
-  {
-    category: "TOOLS",
-    items: ["Git", "GitHub", "VS Code", "Vercel", "Netlify"],
   },
 ];
 
@@ -123,7 +116,10 @@ export interface Project {
   id: string;
   name: string;
   subtitle: string;
+  problem: string;
   technologies: string[];
+  result: string;
+  learning: string;
   highlights: string[];
   featured: boolean;
   heroImage: string;
@@ -138,7 +134,9 @@ export const projects: Project[] = [
   {
     id: "rishource",
     name: "RISHOURCE",
-    subtitle: "Discord Bot & Management Platform",
+    subtitle: "Discord Bot & Full-Stack Management Platform",
+    problem:
+      "Managing large Discord communities requires multiple specialized bots for moderation, AI, ticketing, and weather alerts, leading to fragmentation, unhandled rate limits, and lack of unified web-based administration.",
     technologies: [
       "Python",
       "discord.py",
@@ -146,8 +144,14 @@ export const projects: Project[] = [
       "TypeScript",
       "PostgreSQL",
       "Prisma",
-      "OpenAI",
+      "OpenAI API",
+      "Redux Toolkit",
+      "Node-Cache",
     ],
+    result:
+      "Built an AutoSharded Discord bot platform structured into modular Cogs (moderation, ticketing, leveling, AI, weather) paired with a full-stack Next.js management web dashboard featuring Discord OAuth2 authentication, permission-aware guild discovery, and 15-minute Node-Cache TTL.",
+    learning:
+      "Mastered asynchronous Python (asyncio/discord.py), sharded bot architectures, custom logging with file rotation, OAuth2 token handling, and multi-tier database caching to withstand external API rate limits.",
     highlights: [
       "Architected a modular Discord platform with independently organized Cogs spanning moderation, AI, weather, air quality, games, utilities, ticketing, leveling, logging, and server management.",
       "Re-engineered the bot around AutoShardedBot, dynamic extension discovery, asynchronous PostgreSQL connectivity, centralized configuration, and shared OpenAI infrastructure.",
@@ -179,7 +183,13 @@ export const projects: Project[] = [
     id: "courses-glance",
     name: "COURSES GLANCE",
     subtitle: "Course & PDF Study Platform",
-    technologies: ["JavaScript", "PDF.js", "Firebase Authentication", "Firebase Firestore"],
+    problem:
+      "Students face difficulty organizing multi-subject course PDFs and retaining study progress across sessions because standard web PDF viewers lack persistent highlight annotation and search syncing across devices.",
+    technologies: ["JavaScript", "PDF.js", "Firebase Authentication", "Firebase Firestore", "HTML", "CSS"],
+    result:
+      "Developed an authenticated academic study platform organizing 9 university courses. Integrated PDF.js for lazy document rendering with text search, page zoom, bookmarks, and engineered custom highlight capture using normalized page coordinates synced to Firebase Firestore.",
+    learning:
+      "Gained deep experience in DOM canvas manipulation with PDF.js, coordinate normalization algorithms for document annotations, and Firebase Firestore security rules for user-scoped data persistence.",
     highlights: [
       "Architected an authenticated academic resource platform around 9 structured courses, centralizing course-specific PDF learning material through a responsive dashboard.",
       "Integrated PDF.js for browser-based document rendering with page navigation, zoom, thumbnails, text search, lazy rendering, bookmarks, and responsive mobile viewing.",
@@ -200,7 +210,13 @@ export const projects: Project[] = [
     id: "portfolio-os",
     name: "PORTFOLIO 2.0",
     subtitle: "UbuntuOS Web Environment",
+    problem:
+      "Traditional portfolio websites present static project lists that fail to engage users or demonstrate advanced front-end state management and complex UI event orchestration.",
     technologies: ["Next.js", "React", "Tailwind CSS", "JavaScript", "react-draggable"],
+    result:
+      "Engineered an interactive web-based Ubuntu 20.04 desktop environment with a custom window manager supporting dragging, minimizing, maximizing, restoring, z-index focus control, desktop shortcuts, and dynamic applications (Terminal, VS Code simulator, Spotify player, Weather app).",
+    learning:
+      "Enhanced mastery of React state management, z-index hierarchy orchestration, dynamic component registries, and building responsive OS window interfaces in web browsers.",
     highlights: [
       "Engineered an Ubuntu 20.04-inspired desktop environment that transforms a conventional portfolio into an interactive operating-system-style web application.",
       "Developed a reusable window manager supporting dragging, minimizing, maximizing, restoring, closing, focus management, and z-index control.",
@@ -220,7 +236,13 @@ export const projects: Project[] = [
     id: "weather-now",
     name: "WEATHER NOW",
     subtitle: "Real-Time Weather Dashboard",
-    technologies: ["HTML", "CSS", "JavaScript", "OpenWeatherMap", "Chart.js"],
+    problem:
+      "Most basic weather apps show simple static temperatures without multi-variable trend charts or contextual environmental warnings (humidity spikes, pressure changes, wind vectors).",
+    technologies: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API", "Chart.js"],
+    result:
+      "Built a responsive real-time meteorological dashboard parsing 5-day / 3-hour forecast datasets. Rendered dual-axis Chart.js temperature and humidity graphs alongside 10+ environmental indicators (wind vectors, atmospheric pressure, cloud cover) and rule-based weather advice.",
+    learning:
+      "Deepened understanding of third-party REST API consumption, asynchronous data fetching, data normalization for charting libraries, and dynamic SVG status indicator rendering.",
     highlights: [
       "Engineered a responsive weather dashboard retrieving current conditions and approximately 5 days of 3-hour forecast data for searched cities and predefined coordinates.",
       "Integrated 10+ environmental attributes and visualized up to 40 forecast intervals through a dual-axis Chart.js temperature/humidity graph.",
